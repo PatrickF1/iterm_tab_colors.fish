@@ -17,5 +17,7 @@ function __differentiate_tab_colors -d "set the current iTerm2 tab to the next c
     end
     # need to add 1 to __tab_color_index fish arrays indices start at 1
     set color_index (math "$__tab_color_index + 1")
-    it2setcolor tab $colors_array[$color_index]
+    # Depending on how the user installed iterm2 utilities, iterm2 may not yet be available
+    # so just execute it directly.
+    ~/.iterm2/it2setcolor tab $colors_array[$color_index]
 end
