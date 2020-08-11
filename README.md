@@ -8,7 +8,7 @@ _In this image, the blue tab is brighter because it's the active tab._
 ## Installation
 First, make sure you have iterm2 shell integration with utilities installed. See [this page](https://www.iterm2.com/documentation-shell-integration.html) for instructions. If you can execute `it2setcolor`, then you are good to go.
 
-Secondly, install the fish package itself.
+Secondly, install the fish plugin itself.
 
 with [fisher](https://github.com/jorgebucaran/fisher)
 ```
