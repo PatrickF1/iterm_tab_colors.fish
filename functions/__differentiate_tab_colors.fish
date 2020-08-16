@@ -7,6 +7,9 @@ function __differentiate_tab_colors -d "set the current iTerm2 tab to the next c
 
     if not it2check
         return
+    else if set --query ITERM_TAB_COLOR_SET
+        # tab color has already been set so don't proceed
+        return
     end
 
     set red ff0d00
@@ -28,4 +31,8 @@ function __differentiate_tab_colors -d "set the current iTerm2 tab to the next c
     set color_index (math "$__tab_color_index + 1")
 
     it2setcolor tab $colors_array[$color_index]
+
+    # set an environment variable to prevent future invocations of fish within the same tab
+    # from changing the tab color
+    set --export --global ITERM_TAB_COLOR_SET
 end
