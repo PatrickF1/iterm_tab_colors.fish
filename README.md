@@ -1,5 +1,5 @@
 # iterm_tab_colors.fish
-Automatically differentiate your [iterm2](https://www.iterm2.com) tabs with colors.
+Keeping track of what's going on or what you did in each tab of your [iterm2](https://www.iterm2.com) can be difficult. `iterm_tab_colors` helps with that problem while making your iterm more aesthetic. It automatically differentiates your iterm tabs with colors.
 
 <img alt="All 5 tab colors" src="./images/tab-colors-example.png">
 
