@@ -1,4 +1,7 @@
-# run function that changes tab color on every shell start unless not interactive
+# Attempt to change tab color on every shell start unless not interactive.
+# Putting this check here rather than in __differentiate_tab_colors so that
+# - scripts won't change tab colors as a side effect, but
+# - scripts can intentionally call __differentiate_tab_colors to change tab colors
 if status --is-interactive
     __differentiate_tab_colors
 end
