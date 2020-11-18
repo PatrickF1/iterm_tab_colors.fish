@@ -12,10 +12,10 @@ Secondly, install the fish plugin itself.
 
 with [fisher](https://github.com/jorgebucaran/fisher)
 ```
-fisher add patrickf3139/iterm_tab_colors.fish
+fisher install patrickf1/iterm_tab_colors.fish
 ```
 
 or with [Oh My Fish](https://github.com/oh-my-fish/oh-my-fish)
 ```fish
-omf install https://github.com/patrickf3139/iterm_tab_colors.fish
+omf install https://github.com/patrickf1/iterm_tab_colors.fish
 ```
